@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Book your ticket here</title>
+<style>
+body{
+	font-family:Times New Roman;
+    background-color:gray;
+	margin-left:auto;
+	margin-right:auto;
+	text-transform:bold;
+}
+ #img{
+	height:90px;
+	width:125px;
+	float:left;
+	margin-left:215px;
+	margin-top:20px;	
+}
+menu{
+	font-size:50px;
+	padding: 3px 5px;
+	margin-top:20px;
+	margin-bottom:10px;
+	color:blue;
+	text-shadow: 2px 1px 5px white;
+}
+.menu{
+	clear:both;
+    list-style-type: none;
+    margin-left:auto;
+	margin-right:auto;
+    padding: 10x 20px;
+    overflow: hidden;
+    background-color: silver;
+	width:920px;
+	height:60px;
+	opacity: 0.7;
+	border-radius:7px;
+}
+.menu li  a{
+    float:left;
+    display: block;
+    color: blue;
+    text-align: center;
+    text-transform:bold;
+    padding: 22px 70px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: white;
+	color:black;
+	text-transform:bold;
+	font-size:22px;
+}
+</style>
+</head>
+<body>
+<center>
+<br>
+<img id="img" src="C:\Users\welcome\eclipse-workspace\TicketBooking\Images\images.jpg" alt="Logo"/>
+<br><br>	
+<div>
+<nav>
+<ul class="menu">
+<li><B><a href="Home.html">Home</a></B></li>
+<li><B><a href="#">Ticket booking</a></B></li>
+<li><B><a href="About.html">About Us</a></B></li>
+<li><B><a href="Contact.html">Contact Us</a></B></li>
+</ul>
+</nav>
+ </div>	
+ <div>
+ <h1 style="color:red;">Ticket Booking </h1>
+<form action="Booking" method="Post">
+Name:<input type="text" name="fn" placeholder="your name" required style="width:200px;height:30px;">
+Mail:<input type="text" name="ma" placeholder="your mail" required style="width:200px;height:30px;"><br><br>
+ From:<select required name='from' style="width:210px;height:40px;">
+<option value="">Select a location...</option>
+<option value="chennai">Chennai</option>
+ <option value="coimbatore">Coimbatore</option>
+<option value="trichy">Trichey</option>
+<option value="tirunelveli">Tirunelveli</option>
+<option value="tenkasi">Tenkasi</option>
+</select>
+To:<select required name='to' style="width:210px;height:40px;">
+<option value="">Select a location...</option>
+<option value="chennai">Chennai</option>
+ <option value="coimbatore">Coimbatore</option>
+<option value="trichy">Trichey</option>
+<option value="tirunelveli">Tirunelveli</option>
+<option value="tenkasi">Tenkasi</option>
+ </select>
+ <br><br>
+Seats: <input type="number" name="s" placeholder="enter no of seats"required style="width:200px;height:30px;">
+Date:<input type="text" name="d" placeholder="yyyy-mm-dd" required style="width:200px;height:30px;">
+ <br><br><br>
+  
+<input type="Submit" value="Confirm Ticket" style="width:150px;height:40px;background-color:red;color:white;border:none;">
+ </form>
+ </div>
+ </center>
+ 
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Payment page</title>
+</head>
+<style>
+body {
+  font-family: Arial;
+  font-size: 17px;
+  padding: 8px;
+}
+
+input{
+width:200px;height:30px;}
+label {
+  margin-bottom: 10px;
+  display: block;
+  font-size:25px;
+  color:blue;
+  text-transform:bold;
+}
+
+
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+</style>
+</head>
+<body>
+<center>
+<h1 style="color:red;">Payment Form</h1>
+<div>
+      <form action="Pay" method="post">
+      <table>
+           <tr><td>Name on Card</td><td> <input type="text" id="cname" name="cardname" placeholder="John More Doe" required></td></tr>
+           <tr><td>Credit card number</td><td><input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required></td></tr>
+           <tr><td>Exp Month</td><td><input type="text" id="expmonth" name="expmonth" placeholder="September" required></td></tr>
+           <tr><td>Exp Year</td><td><input type="number" id="expyear" name="expyear" placeholder="2018" required></td></tr>
+           <tr><td>CVV </td><td><input type="number" id="cvv" name="cvv" placeholder="352" required>
+           <tr><td>Amount </td><td><input type="number" id="amt" name="amt" placeholder="1200" required>
+           </table><br><bt><br><br><input type="Submit" value="Confirm payment" oncsubmit="pay()"style="width:150px;height:40px;background-color:red;color:white;border:none;">
+            </form>
+              </div>
+          </center>
+
+</body>
+</html>
